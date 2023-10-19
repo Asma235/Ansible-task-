@@ -1,0 +1,10 @@
+- name: Upload file to S3
+  aws_s3:
+    bucket: "{{ aws_s3_bucket }}"
+    object: "{{ s3_key }}"
+    src: "{{ source_file }}"
+    mode: put
+    overwrite: always
+    access_key: "{{ aws_access_key }}"
+    secret_key: "{{ aws_secret_key }}"
+

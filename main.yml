@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: false
+  become: yes
+  tasks:
+    - name: Include decrypted AWS keys
+      include_vars:
+        file: my_secrets.yml 
+  roles:
+    - app-backup
+

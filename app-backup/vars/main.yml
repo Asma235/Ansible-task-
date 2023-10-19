@@ -1,0 +1,7 @@
+# vars file for app-backup
+---
+aws_access_key: "AKIA2G47Q5KBZ7CWHC7F"
+aws_secret_key: "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"
+aws_s3_bucket: "ansible-test-bucket18"
+source_file: "/home/osiuser/ansible/empdetailsbackup.sql"
+s3_key: "ansible-test-bucket18/"
