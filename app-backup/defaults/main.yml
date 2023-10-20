@@ -1,2 +1,5 @@
 ---
 # defaults file for app-backup
+aws_s3_bucket: "ansible-test-bucket18"
+source_file: "/home/osiuser/ansible/empdetailsbackup.sql"
+s3_key: "ansible-test-bucket18/"

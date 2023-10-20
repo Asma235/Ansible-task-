@@ -2,10 +2,10 @@
 - hosts: localhost
   gather_facts: false
   become: yes
-  tasks:
-    - name: Include decrypted AWS keys
-      include_vars:
-        file: my_secrets.yml 
+    #tasks:
+    #- name: Include decrypted AWS keys
+      #include_vars:
+        #file: "/home/osiuser/ansible/app-backup/vars/main.yml"
+        
   roles:
     - app-backup
-
